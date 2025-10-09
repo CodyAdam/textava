@@ -33,9 +33,7 @@ export default function Home() {
 
       {/* Subheading */}
       <p className="text-lg md:text-xl text-black/70 text-center mb-12 max-w-2xl">
-        Ava analyzes your network to surface the most relevant freelance jobs
-        and contacts, so you spend less time searching and more time working.
-        Invite-only access. Join the waitlist to be the first to try it out.
+        We match your skills to relevant opportunities and deliver a step-by-step strategy powered by your LinkedIn connections to ensure you land the role.
       </p>
 
       {/* CTA Button */}
