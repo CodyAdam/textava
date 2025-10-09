@@ -26,8 +26,8 @@ export default function Home() {
       {/* Heading */}
       <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-black text-center mb-6 max-w-4xl">
         Transform your{" "}
-        <em className="font-serif not-italic font-medium">LinkedIn</em>{" "}
-        connections into qualified client{" "}
+        <em className="font-serif not-italic font-medium">network</em> into
+        qualified client{" "}
         <em className="font-serif not-italic font-medium">introductions</em>
       </h1>
 
