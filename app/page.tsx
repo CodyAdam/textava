@@ -1,41 +1,19 @@
-"use client";
-
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const INITIAL_JOINS = 65;
 const INITIAL_DATE = new Date("2025-10-08T16:00:00");
 const NEW_JOINS_AFTER_MINUTES = 113; // after X minutes, increment new joins by 1
+// Reference date: October 8, 2025, 00:00:00
+const referenceDate = INITIAL_DATE;
+const now = new Date();
+
+// Calculate difference in milliseconds
+const diffMs = now.getTime() - referenceDate.getTime();
+const intervals = Math.floor(diffMs / (NEW_JOINS_AFTER_MINUTES * 60 * 1000));
+const JOINED_COUNT = INITIAL_JOINS + intervals;
 
 export default function Home() {
-  const [joinedCount, setJoinedCount] = useState(INITIAL_JOINS);
-
-  useEffect(() => {
-    const calculateJoinedCount = () => {
-      // Reference date: October 8, 2025, 00:00:00
-      const referenceDate = INITIAL_DATE;
-      const now = new Date();
-
-      // Calculate difference in milliseconds
-      const diffMs = now.getTime() - referenceDate.getTime();
-      const intervals = Math.floor(
-        diffMs / (NEW_JOINS_AFTER_MINUTES * 60 * 1000)
-      );
-
-      // Start at 65 and add intervals
-      setJoinedCount(INITIAL_JOINS + intervals);
-    };
-
-    // Calculate immediately
-    calculateJoinedCount();
-
-    // Update every minute to keep it current
-    const interval = setInterval(calculateJoinedCount, 60000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className="relative bg-white overflow-hidden p-6 flex flex-col items-center justify-center min-h-screen">
       <div className="absolute top-6 left-6 z-20 flex items-center">
@@ -112,7 +90,7 @@ export default function Home() {
           Get started on WhatsApp
         </Link>
         <span className="text-black/40 text-sm mt-4">
-          {joinedCount} already joined
+          {JOINED_COUNT} already joined
         </span>
       </main>
       <footer className="absolute bottom-6 left-0 right-0 z-20 flex items-center w-full justify-center">
