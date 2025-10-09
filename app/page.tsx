@@ -17,8 +17,9 @@ export default function Home() {
     <main className="relative z-10 flex flex-col items-center justify-center px-4">
       {/* Badge */}
       <div className="mb-8">
-        <span className="inline-block px-4 py-2 text-sm font-medium text-black/80 bg-black/5 backdrop-blur-sm rounded-full border border-black/20">
-          working with 19 handpicked freelancers
+        <span className="pr-4 pl-3 py-2 text-sm font-medium text-black/80 bg-black/5 backdrop-blur-sm rounded-full border border-black/20 flex items-center gap-3">
+          <div className="size-2.5 border border-green-800/20 rounded-full bg-green-500"></div>{" "}
+          early access now open
         </span>
       </div>
 
