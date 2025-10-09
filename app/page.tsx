@@ -48,7 +48,7 @@ export default function Home() {
         {/* Badge */}
         <div className="mb-8">
           <span className="inline-block px-4 py-2 text-sm font-medium text-black/80 bg-black/5 backdrop-blur-sm rounded-full border border-black/20">
-            currently working with 19 handpicked freelancers
+            working with 19 handpicked freelancers
           </span>
         </div>
 
