@@ -27,8 +27,10 @@ export default function Home() {
       <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-black text-center mb-6 max-w-4xl">
         Transform your{" "}
         <em className="font-serif not-italic font-medium">network</em> into
-        qualified client{" "}
-        <em className="font-serif not-italic font-medium">introductions</em>
+        qualified{" "}
+        <em className="font-serif not-italic font-medium">
+          client introductions
+        </em>
       </h1>
 
       {/* Subheading */}
@@ -58,7 +60,7 @@ export default function Home() {
         Get started on WhatsApp
       </Link>
       <span className="text-black/40 text-sm mt-4">
-        {JOINED_COUNT} already joined
+        {JOINED_COUNT} freelancers already on the waitlist
       </span>
     </main>
   );
