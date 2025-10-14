@@ -58,7 +58,7 @@ export default function Home() {
         Share your portfolio on WhatsApp
       </Link>
       <span className="text-black/40 text-sm mt-4">
-        {JOINED_COUNT} Designers using their netowrk as an unfair advantage
+        {JOINED_COUNT} Designers using their network as an unfair advantage
       </span>
     </main>
   );
