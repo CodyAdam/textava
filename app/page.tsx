@@ -16,14 +16,21 @@ export default function Home() {
   return (
     <main className="relative z-10 flex flex-col items-center justify-center px-4">
       
-      {/* Top proof bar (replaces early access) */}
-      <div className="mb-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[13px] leading-6 text-black/70">
-       <span><span className="font-semibold text-black">100+</span> conversations</span>
-       <span aria-hidden="true" className="select-none">•</span>
-       <span><span className="font-semibold text-black">200+</span> personalised leads sent</span>
-       <span aria-hidden="true" className="select-none">•</span>
-       <span><span className="font-semibold text-black">90%</span> US-based leads</span>
-     </div>
+{/* Trust Numbers Section */}
+<div className="mb-12 mt-4 grid w-full max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3 text-center">
+  <div>
+    <p className="text-3xl font-semibold text-black">100+</p>
+    <p className="text-sm text-black/60">conversations</p>
+  </div>
+  <div>
+    <p className="text-3xl font-semibold text-black">200+</p>
+    <p className="text-sm text-black/60">personalised leads sent</p>
+  </div>
+  <div>
+    <p className="text-3xl font-semibold text-black">90%</p>
+    <p className="text-sm text-black/60">US-based leads</p>
+  </div>
+</div>
 
       {/* Heading */}
       <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-black text-center mb-6 max-w-4xl">
