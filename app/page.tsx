@@ -43,7 +43,7 @@ export default function Home() {
       {/* QR Code CTA */}
       <div className="mt-8 flex flex-col items-center">
         <img
-          src="/IMG_2688.jpg" // path to your QR code in /public
+          src="/IMG_2688.png" // path to your QR code in /public
           alt="Scan to connect on WhatsApp"
           className="w-40 h-40 rounded-xl border border-black/10 shadow-sm hover:scale-105 transition-transform"
        />
