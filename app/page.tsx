@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-const INITIAL_JOINS = 25;
+const INITIAL_JOINS = 0;
 const INITIAL_DATE = new Date("2025-10-08T16:00:00");
-const NEW_JOINS_AFTER_MINUTES = 113; // after X minutes, increment new joins by 1
+const NEW_JOINS_AFTER_MINUTES = 2000; // after X minutes, increment new joins by 1
 // Reference date: October 8, 2025, 00:00:00
 const referenceDate = INITIAL_DATE;
 const now = new Date();
