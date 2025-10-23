@@ -17,18 +17,18 @@ export default function Home() {
     <main className="relative z-10 flex flex-col items-center justify-center px-4">
       
 {/* Trust Numbers Section */}
-<div className="mb-12 mt-4 grid w-full max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3 text-center">
-  <div>
-    <p className="text-3xl font-semibold text-black">100+</p>
-    <p className="text-sm text-black/60">conversations</p>
+<div className="mb-12 mt-4 grid w-full max-w-3xl grid-cols-1 gap-6 sm:grid-cols-3 text-left">
+  <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+    <p className="text-4xl font-semibold text-black leading-none">100+</p>
+    <p className="text-sm text-black/60 leading-tight">conversations</p>
   </div>
-  <div>
-    <p className="text-3xl font-semibold text-black">200+</p>
-    <p className="text-sm text-black/60">personalised leads sent</p>
+  <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+    <p className="text-4xl font-semibold text-black leading-none">200+</p>
+    <p className="text-sm text-black/60 leading-tight">personalised leads sent</p>
   </div>
-  <div>
-    <p className="text-3xl font-semibold text-black">90%</p>
-    <p className="text-sm text-black/60">US-based leads</p>
+  <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
+    <p className="text-4xl font-semibold text-black leading-none">90%</p>
+    <p className="text-sm text-black/60 leading-tight">US-based leads</p>
   </div>
 </div>
 
