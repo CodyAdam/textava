@@ -15,13 +15,15 @@ const JOINED_COUNT = INITIAL_JOINS + intervals;
 export default function Home() {
   return (
     <main className="relative z-10 flex flex-col items-center justify-center px-4">
-      {/* Badge */}
-      <div className="mb-8">
-        <span className="pr-4 pl-3 py-2 text-sm font-medium text-black/80 bg-black/5 backdrop-blur-sm rounded-full border border-black/20 flex items-center gap-3">
-          <div className="size-2.5 border border-green-800/20 rounded-full bg-green-500"></div>{" "}
-          early access now open
-        </span>
-      </div>
+      
+      {/* Top proof bar (replaces early access) */}
+      <div className="mb-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[13px] leading-6 text-black/70">
+       <span><span className="font-semibold text-black">100+</span> conversations</span>
+       <span aria-hidden="true" className="select-none">•</span>
+       <span><span className="font-semibold text-black">200+</span> personalised leads sent</span>
+       <span aria-hidden="true" className="select-none">•</span>
+       <span><span className="font-semibold text-black">90%</span> US-based leads</span>
+     </div>
 
       {/* Heading */}
       <h1 className="text-5xl md:text-7xl font-semibold tracking-tight text-black text-center mb-6 max-w-4xl">
